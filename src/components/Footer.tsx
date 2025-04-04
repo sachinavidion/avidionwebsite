@@ -88,7 +88,7 @@ const Footer = () => {
           <span className="text-sm text-gray-400">Connect with us</span>
           <div className="flex gap-4 text-xl text-gray-300">
             <a href="https://www.linkedin.com/company/avidion" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 hover:scale-110 transition-all duration-300"><FaLinkedin /></a>
-            <a href="https://www.facebook.com/avidionsoftwares" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 hover:scale-110 transition-all duration-300"><FaFacebook /></a>
+            <a href="https://www.facebook.com/avidionai" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 hover:scale-110 transition-all duration-300"><FaFacebook /></a>
             <a href="https://www.instagram.com/avidion.ai" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 hover:scale-110 transition-all duration-300"><FaInstagram /></a>
             <a href="https://maps.app.goo.gl/63vbJf5DTtpBCK5w8" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 hover:scale-110 transition-all duration-300"><FiMapPin /></a>
           </div>
