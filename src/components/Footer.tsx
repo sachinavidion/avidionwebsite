@@ -43,11 +43,11 @@ const Footer = () => {
           <h3 className="text-2xl font-bold mb-8">Avidion</h3>
           <div className="space-y-4">
             <a 
-              href="mailto:avidionsoftwares@gmail.com"
+              href="mailto:info@avidion.ai"
               className="flex items-center gap-3 text-gray-400 hover:text-purple-400 transition-colors duration-300"
             >
               <Mail size={20} />
-              avidionsoftwares@gmail.com
+              info@avidion.ai
             </a>
             <a
               href="https://maps.google.com/?q=676,Sector-42,Gurugram,Haryana,India"
