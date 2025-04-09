@@ -2,8 +2,8 @@ import React from 'react';
 import { Mail, MapPin, ExternalLink } from 'lucide-react';
 import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
+import { BsWhatsapp } from "react-icons/bs";
 import { motion } from 'framer-motion';
-import { BsWhatsapp } from 'react-icons/bs';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -45,89 +45,47 @@ const ContactInfo = () => {
         >
           <motion.div className="space-y-8">
             {/* Email */}
-            <motion.div 
-              className="flex items-start gap-6"
-              variants={itemVariants}
-            >
+            <motion.div className="flex items-start gap-6" variants={itemVariants}>
               <div className="flex-shrink-0">
-                <motion.div
-                  whileHover={{ 
-                    rotate: 360,
-                    scale: 1.2,
-                    transition: { duration: 0.8, ease: "easeInOut" }
-                  }}
-                >
+                <motion.div whileHover={{ rotate: 360, scale: 1.2, transition: { duration: 0.8, ease: "easeInOut" } }}>
                   <Mail size={24} className="text-accent" />
                 </motion.div>
               </div>
               <div>
-                <motion.div className="space-y-6">
-  {/* Email */}
-  <motion.div className="flex items-start gap-6" variants={itemVariants}>
-    <div className="flex-shrink-0">
-      <motion.div
-        whileHover={{
-          rotate: 360,
-          scale: 1.2,
-          transition: { duration: 0.8, ease: "easeInOut" },
-        }}
-      >
-        <Mail size={24} className="text-accent" />
-      </motion.div>
-    </div>
-    <div>
-      <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-      <a
-        href="mailto:info@avidion.ai"
-        className="text-gray-300 hover:text-accent-glow transition-colors duration-300"
-      >
-        info@avidion.ai
-      </a>
-    </div>
-  </motion.div>
+                <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
+                <a
+                  href="mailto:info@avidion.ai"
+                  className="text-gray-300 hover:text-accent-glow transition-colors duration-300"
+                >
+                  info@avidion.ai
+                </a>
+              </div>
+            </motion.div>
 
-  {/* WhatsApp */}
-  <motion.div className="flex items-start gap-6" variants={itemVariants}>
-    <div className="flex-shrink-0">
-      <motion.div
-        whileHover={{
-          rotate: 360,
-          scale: 1.2,
-          transition: { duration: 0.8, ease: "easeInOut" },
-        }}
-      >
-        <BsWhatsapp size={24} className="text-green-400" />
-      </motion.div>
-    </div>
-    <div>
-      <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
-      <a
-        href="https://wa.me/919896584099"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-300 hover:text-green-400 transition-colors duration-300"
-      >
-        +91 98965 84099
-      </a>
-    </div>
-  </motion.div>
-</motion.div>
-
-            </div>
+            {/* WhatsApp */}
+            <motion.div className="flex items-start gap-6" variants={itemVariants}>
+              <div className="flex-shrink-0">
+                <motion.div whileHover={{ rotate: 360, scale: 1.2, transition: { duration: 0.8, ease: "easeInOut" } }}>
+                  <BsWhatsapp size={24} className="text-green-400" />
+                </motion.div>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
+                <a
+                  href="https://wa.me/919896584099"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-green-400 transition-colors duration-300"
+                >
+                  +91 98965 84099
+                </a>
+              </div>
+            </motion.div>
 
             {/* Address */}
-            <motion.div 
-              className="flex items-start gap-6"
-              variants={itemVariants}
-            >
+            <motion.div className="flex items-start gap-6" variants={itemVariants}>
               <div className="flex-shrink-0">
-                <motion.div
-                  whileHover={{ 
-                    rotate: 360,
-                    scale: 1.2,
-                    transition: { duration: 0.8, ease: "easeInOut" }
-                  }}
-                >
+                <motion.div whileHover={{ rotate: 360, scale: 1.2, transition: { duration: 0.8, ease: "easeInOut" } }}>
                   <MapPin size={24} className="text-accent" />
                 </motion.div>
               </div>
@@ -137,7 +95,7 @@ const ContactInfo = () => {
                   676, Sector-42, Gurugram,<br />
                   Haryana, India
                 </p>
-                <a 
+                <a
                   href="https://maps.app.goo.gl/63vbJf5DTtpBCK5w8"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -149,10 +107,9 @@ const ContactInfo = () => {
               </div>
             </motion.div>
           </motion.div>
-          <motion.div 
-            className="mt-12 text-center"
-            variants={itemVariants}
-          >
+
+          {/* Social Links */}
+          <motion.div className="mt-12 text-center" variants={itemVariants}>
             <h3 className="text-lg font-semibold text-white mb-4">Follow us for updates:</h3>
             <div className="flex justify-center gap-4 text-xl text-gray-300">
               <a href="https://www.linkedin.com/company/avidion" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 hover:scale-110 transition-all duration-300"><FaLinkedin /></a>
@@ -163,8 +120,9 @@ const ContactInfo = () => {
           </motion.div>
         </motion.div>
       </motion.div>
-  </section>
+    </section>
   );
 };
 
 export default ContactInfo;
+
