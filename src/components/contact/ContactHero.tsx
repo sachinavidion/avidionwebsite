@@ -4,18 +4,26 @@ import { motion } from 'framer-motion';
 const ContactHero = () => {
   return (
     <section className="relative pt-40 pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070&auto=format&fit=crop")',
-        }}
-      />
+      
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="/contacthero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       {/* Subtle Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/65 to-black/75 backdrop-blur-[3px]" />
 
+      {/* Optional Hero Gradient Layer (if used globally) */}
       <div className="absolute inset-0 hero-gradient"></div>
+
+      {/* Content */}
       <motion.div 
         className="max-w-3xl mx-auto text-center relative z-10"
         initial={{ opacity: 0, y: 20 }}
