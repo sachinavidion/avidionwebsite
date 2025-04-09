@@ -113,7 +113,7 @@ const ContactInfo = () => {
   </motion.div>
 </motion.div>
 
-            </motion.div>
+            </div>
 
             {/* Address */}
             <motion.div 
