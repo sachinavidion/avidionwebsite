@@ -63,7 +63,7 @@ const ContactInfo = () => {
               <div>
                 <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
                 <a 
-                  href="mailto:avidionsoftwares@gmail.com"
+                  href="mailto:info@avidion.ai"
                   className="text-gray-300 hover:text-accent-glow transition-colors duration-300"
                 >
                   info@avidion.ai
