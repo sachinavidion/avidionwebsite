@@ -20,6 +20,15 @@ export default {
         'glow-md': '0 0 25px -5px rgba(139, 92, 246, 0.3)',
         'glow-lg': '0 0 35px -7px rgba(139, 92, 246, 0.3)',
       },
+      keyframes: {
+  pulseFast: {
+    '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+    '50%': { opacity: '0.7', transform: 'scale(1.1)' },
+  },
+},
+animation: {
+  'pulse-fast': 'pulseFast 1s ease-in-out infinite',
+},
     },
   },
   plugins: [],
