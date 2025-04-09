@@ -4,18 +4,23 @@ import { motion } from 'framer-motion';
 const ServicesHero = () => {
   return (
     <section className="relative pt-40 pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop")',
-        }}
-      />
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src="/serviceshero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       {/* Dark Overlay with Blur */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80 backdrop-blur-[2px] z-0" />
+      <div className="absolute inset-0 hero-gradient z-0"></div>
 
-      <div className="absolute inset-0 hero-gradient"></div>
+      {/* Content */}
       <motion.div 
         className="max-w-4xl mx-auto text-center relative z-10"
         initial={{ opacity: 0, y: 20 }}
