@@ -3,6 +3,7 @@ import { Mail, MapPin, ExternalLink } from 'lucide-react';
 import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { motion } from 'framer-motion';
+import { BsWhatsapp } from 'react-icons/bs';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -65,9 +66,37 @@ const ContactInfo = () => {
                   href="mailto:avidionsoftwares@gmail.com"
                   className="text-gray-300 hover:text-accent-glow transition-colors duration-300"
                 >
-                  avidionsoftwares@gmail.com
+                  info@avidion.ai
                 </a>
               </div>
+              <motion.div
+  className="flex items-start gap-6 mt-4"
+  variants={itemVariants}
+>
+  <div className="flex-shrink-0">
+    <motion.div
+      whileHover={{
+        rotate: 360,
+        scale: 1.2,
+        transition: { duration: 0.8, ease: "easeInOut" }
+      }}
+    >
+      <BsWhatsapp size={24} className="text-green-400" />
+    </motion.div>
+  </div>
+  <div>
+    <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
+    <a
+      href="https://wa.me/919896584099"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-300 hover:text-green-400 transition-colors duration-300"
+    >
+      +91 98965 84099
+    </a>
+  </div>
+</motion.div>
+
             </motion.div>
 
             {/* Address */}
@@ -90,10 +119,10 @@ const ContactInfo = () => {
                 <h3 className="text-lg font-semibold text-white mb-2">Office Address</h3>
                 <p className="text-gray-300 mb-4">
                   676, Sector-42, Gurugram,<br />
-                  Haryana, India – 122011
+                  Haryana, India
                 </p>
                 <a 
-                  href="https://g.co/kgs/Ek6BAV4"
+                  href="https://maps.app.goo.gl/63vbJf5DTtpBCK5w8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-accent hover:text-accent-glow transition-colors duration-300"
