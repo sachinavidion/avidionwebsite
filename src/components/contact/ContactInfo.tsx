@@ -70,7 +70,8 @@ const ContactInfo = () => {
                 </a>
               </div>
  <motion.div
-  className="flex items-start gap-6"
+  className="flex flex-col gap-6"
+
   variants={itemVariants}
 >
   <div className="flex-shrink-0">
