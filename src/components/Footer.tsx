@@ -98,10 +98,18 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-2 mt-6">
           <span className="text-sm text-gray-400">Connect with us</span>
           <div className="flex gap-4 text-xl text-gray-300">
-            <a href="https://www.linkedin.com/company/avidion" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 hover:scale-110 transition-all duration-300"><FaLinkedin /></a>
-            <a href="https://www.facebook.com/avidionai" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 hover:scale-110 transition-all duration-300"><FaFacebook /></a>
-            <a href="https://www.instagram.com/avidion.ai" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 hover:scale-110 transition-all duration-300"><FaInstagram /></a>
-            <a href="https://maps.app.goo.gl/63vbJf5DTtpBCK5w8" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 hover:scale-110 transition-all duration-300"><FiMapPin /></a>
+            <a href="https://www.linkedin.com/company/avidion" target="_blank" rel="noopener noreferrer">
+  <FaLinkedin size={28} className="text-purple-400 drop-shadow-glow animate-pulse-fast hover:scale-110 transition-all duration-300" />
+</a>
+<a href="https://www.facebook.com/avidionai" target="_blank" rel="noopener noreferrer">
+  <FaFacebook size={28} className="text-purple-400 drop-shadow-glow animate-pulse-fast hover:scale-110 transition-all duration-300" />
+</a>
+<a href="https://www.instagram.com/avidion.ai" target="_blank" rel="noopener noreferrer">
+  <FaInstagram size={28} className="text-purple-400 drop-shadow-glow animate-pulse-fast hover:scale-110 transition-all duration-300" />
+</a>
+<a href="https://maps.app.goo.gl/63vbJf5DTtpBCK5w8" target="_blank" rel="noopener noreferrer">
+  <FiMapPin size={28} className="text-purple-400 drop-shadow-glow animate-pulse-fast hover:scale-110 transition-all duration-300" />
+</a>     
           </div>
         </div>
         <p className="mt-6">&copy; {new Date().getFullYear()} Avidion. All rights reserved.</p>
