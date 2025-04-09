@@ -163,7 +163,7 @@ const ContactInfo = () => {
           </motion.div>
         </motion.div>
       </motion.div>
-    </section>
+  </section>
   );
 };
 
