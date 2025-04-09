@@ -6,18 +6,20 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <section className="relative min-h-screen text-white overflow-hidden flex items-center justify-center text-center px-6">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop")',
-        }}
+      {/* 🔁 Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover z-[-1]"
+        src="/hero.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
       />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80 backdrop-blur-[1px]" />
+      {/* 🎭 Dark Overlay */}
+      <div className="absolute inset-0 bg-black/70 z-0" />
 
-      {/* Animated Glow Orb */}
+      {/* 🔮 Glow Orb */}
       <motion.div 
         className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none"
         initial={{ opacity: 0 }}
@@ -26,15 +28,16 @@ const Hero = () => {
       >
         <div className="w-[120vh] h-[120vh] bg-purple-600/10 rounded-full blur-[100px] animate-orb" />
       </motion.div>
-      {/* Radial Glow Background */}
+
+      {/* 🌌 Radial Gradient */}
       <div className="absolute inset-0 z-0 bg-gradient-radial from-purple-600/20 to-transparent opacity-30 blur-2xl animate-pulseGlow pointer-events-none" />
 
-      {/* Grid Overlay */}
+      {/* 🧮 Grid Overlay */}
       <div 
         className="absolute inset-0 bg-[url('/grid.svg')] bg-cover bg-center opacity-10 z-0 pointer-events-none"
       />
 
-      {/* Content */}
+      {/* 🧠 Main Content */}
       <motion.div 
         className="relative z-10 max-w-3xl"
         initial={{ opacity: 0, y: 20 }}
@@ -86,10 +89,10 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 1.2 }}
         >
           <Link to="/contact">
-          <button className="group inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full shadow-lg shadow-purple-500/30 hover:scale-105 transition-all duration-300">
-            Transform Your Idea into Reality
-            <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-          </button>
+            <button className="group inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full shadow-lg shadow-purple-500/30 hover:scale-105 transition-all duration-300">
+              Transform Your Idea into Reality
+              <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+            </button>
           </Link>
         </motion.div>
       </motion.div>
