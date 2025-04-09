@@ -69,8 +69,8 @@ const ContactInfo = () => {
                   info@avidion.ai
                 </a>
               </div>
-              <motion.div
-  className="flex items-start gap-6 mt-4"
+ <motion.div
+  className="flex items-start gap-6"
   variants={itemVariants}
 >
   <div className="flex-shrink-0">
@@ -78,7 +78,7 @@ const ContactInfo = () => {
       whileHover={{
         rotate: 360,
         scale: 1.2,
-        transition: { duration: 0.8, ease: "easeInOut" }
+        transition: { duration: 0.8, ease: "easeInOut" },
       }}
     >
       <BsWhatsapp size={24} className="text-green-400" />
