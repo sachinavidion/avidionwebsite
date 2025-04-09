@@ -61,41 +61,56 @@ const ContactInfo = () => {
                 </motion.div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-                <a 
-                  href="mailto:info@avidion.ai"
-                  className="text-gray-300 hover:text-accent-glow transition-colors duration-300"
-                >
-                  info@avidion.ai
-                </a>
-              </div>
- <motion.div
-  className="flex flex-col gap-6"
+                <motion.div className="space-y-6">
+  {/* Email */}
+  <motion.div className="flex items-start gap-6" variants={itemVariants}>
+    <div className="flex-shrink-0">
+      <motion.div
+        whileHover={{
+          rotate: 360,
+          scale: 1.2,
+          transition: { duration: 0.8, ease: "easeInOut" },
+        }}
+      >
+        <Mail size={24} className="text-accent" />
+      </motion.div>
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
+      <a
+        href="mailto:info@avidion.ai"
+        className="text-gray-300 hover:text-accent-glow transition-colors duration-300"
+      >
+        info@avidion.ai
+      </a>
+    </div>
+  </motion.div>
 
-  variants={itemVariants}
->
-  <div className="flex-shrink-0">
-    <motion.div
-      whileHover={{
-        rotate: 360,
-        scale: 1.2,
-        transition: { duration: 0.8, ease: "easeInOut" },
-      }}
-    >
-      <BsWhatsapp size={24} className="text-green-400" />
-    </motion.div>
-  </div>
-  <div>
-    <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
-    <a
-      href="https://wa.me/919896584099"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-300 hover:text-green-400 transition-colors duration-300"
-    >
-      +91 98965 84099
-    </a>
-  </div>
+  {/* WhatsApp */}
+  <motion.div className="flex items-start gap-6" variants={itemVariants}>
+    <div className="flex-shrink-0">
+      <motion.div
+        whileHover={{
+          rotate: 360,
+          scale: 1.2,
+          transition: { duration: 0.8, ease: "easeInOut" },
+        }}
+      >
+        <BsWhatsapp size={24} className="text-green-400" />
+      </motion.div>
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
+      <a
+        href="https://wa.me/919896584099"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-300 hover:text-green-400 transition-colors duration-300"
+      >
+        +91 98965 84099
+      </a>
+    </div>
+  </motion.div>
 </motion.div>
 
             </motion.div>
