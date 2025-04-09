@@ -61,13 +61,13 @@ const Footer = () => {
 </a>
 
             <a
-              href="https://maps.google.com/?q=676,Sector-42,Gurugram,Haryana,India"
+              href="https://maps.app.goo.gl/63vbJf5DTtpBCK5w8"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-gray-400 hover:text-purple-400 transition-colors duration-300"
             >
               <MapPin size={20} />
-              676, Sector-42, Gurugram, Haryana, India - 122011
+              676, Sector-42, Gurugram, Haryana, India
             </a>
           </div>
         </div>
