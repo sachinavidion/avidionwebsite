@@ -3,6 +3,7 @@ import { Mail, MapPin } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
+import { BsWhatsapp } from 'react-icons/bs';
 
 const ServiceLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
   const location = useLocation();
@@ -49,6 +50,16 @@ const Footer = () => {
               <Mail size={20} />
               info@avidion.ai
             </a>
+            <a
+  href="https://wa.me/919896584099" 
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors duration-300"
+>
+  <BsWhatsapp size={20} />
+  +91 9896584099
+</a>
+
             <a
               href="https://maps.google.com/?q=676,Sector-42,Gurugram,Haryana,India"
               target="_blank"
